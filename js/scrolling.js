@@ -11,6 +11,12 @@ $(function() {
 
         $(this).addClass("current");
 
-        console.log($('header').outerHeight());
     });
 });
+
+/*
+$(document).ready(function(){
+    $('nav a').removeClass("current");
+    $(this).addClass("current");
+});
+*/
