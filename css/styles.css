@@ -10,11 +10,16 @@ body{
 
     font-family:Georgia;
     font-size: 34px;
-    font-style: italic;
     letter-spacing:-1px;
     width: 100%;
 
 }
+
+@font-face{
+    font-family: Nevis;
+    src:url('../fonts/nevis.ttf');
+}
+
 article{
     height:2000px;
     width:100%;
@@ -25,6 +30,11 @@ nav li{
     display: inline;
 }
 
+nav li:first-child{
+    margin-right: 20px;
+    font-family: Nevis;
+}
+
 header{
     position: fixed;
     width: 100%;
@@ -33,7 +43,6 @@ header{
 
     font-family: 'Dosis', sans-serif;    
     font-size: 34px;
-    font-style: italic;  
 
 }
 
@@ -43,9 +52,7 @@ header a{
 
 }
 
-header .current{
-    color: #aaa;
-}
+
 
 body img{
     margin: 0;
@@ -85,3 +92,8 @@ article {
 .clear{
     clear: both;
 }
+
+.active a{
+    color: #aaa;
+}
+
