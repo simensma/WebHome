@@ -21,8 +21,6 @@ $(function() {
     $('nav a').bind('click',function(event){
         var $anchor = $(this);
         scrollTo($anchor.attr('href'),$anchor);
-
-
     });
 });
 
@@ -31,5 +29,9 @@ $(document).ready(function(){
     $('body').scrollspy({target:'#navbar'});
     $('body').data().scrollspy.options.offset=100;
     $('body').data().scrollspy.process();
+    scrollTo(window.location.hash,$(window.location.hash));
+});
+
+$(window).on('hashchange', function(){
     scrollTo(window.location.hash,$(window.location.hash));
 });
